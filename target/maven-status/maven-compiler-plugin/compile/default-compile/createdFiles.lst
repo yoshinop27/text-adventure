@@ -1,0 +1,4 @@
+edu/grinnell/csc207/textgame/Objects/Item.class
+edu/grinnell/csc207/textgame/Objects/NPC.class
+edu/grinnell/csc207/textgame/Interfaces/Lookable.class
+edu/grinnell/csc207/textgame/Inventory.class
