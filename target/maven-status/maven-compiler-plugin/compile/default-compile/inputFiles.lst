@@ -2,6 +2,10 @@
 /Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/Inventory.java
 /Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/Objects/Item.java
 /Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/Objects/NPC.java
+/Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/Parser.java
+/Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/Rooms/Application.java
+/Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/Rooms/Headquarters.java
+/Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/Rooms/Interview.java
 /Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/Rooms/LinkedIn.java
 /Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/Rooms/Room.java
 /Users/prestonyoshino/dsa/projects/text-game/src/main/java/edu/grinnell/csc207/textgame/TextAdventure.java

@@ -1,59 +1,53 @@
 package edu.grinnell.csc207.textgame;
 
+import edu.grinnell.csc207.textgame.Objects.Item;
 import java.util.ArrayList;
 import java.util.List;
-import edu.grinnell.csc207.textgame.Objects.Item;
 
+/**
+ * inventory class to manage player's items
+ */
 public class Inventory {
-    private List<Item> items;
+    // list of users items
+    private List<Item> invItems;
 
     /**
-     * Constructor
+     * initialize empty inventory
      */
     public Inventory() {
-        this.items = new ArrayList<>();
+        this.invItems = new ArrayList<>();
     }
-    
+
     /**
      * Add an item to the inventory
-     * @param item
+     * @param item the item to add
      */
     public void addItem(Item item) {
-        this.items.add(item);
+        this.invItems.add(item);
     }
-    
+
     /**
-     * Remove an item from the inventory
-     * @param item
+     * Removes item from the inventory
+     * @param item the item to remove
      */
     public void removeItem(Item item) {
-        this.items.remove(item);
+        this.invItems.remove(item);
     }
-    
+
     /**
+     * get the list of items
      * @return list of items in the inventory
      */
-    public List<Item> getItems() {
-        return this.items;
+    public List<Item> getinvItems() {
+        return this.invItems;
     }
-    
+
     /**
-     * Check if an item is in the inventory
-     * @param item
+     * Checks if an item is in the inventory
+     * @param item the item to check for
      * @return true if the item is in the inventory, false otherwise
      */
     public boolean hasItem(Item item) {
-        return this.items.contains(item);
-    }
-
-    public void showInventory() {
-        if (items.isEmpty()) {
-            System.out.println("Your inventory is empty.");
-        } else {
-            System.out.println("=== Inventory ===");
-            for (Item item : items) {
-                System.out.println("  - " + item.getName());
-            }
-        }
+        return this.invItems.contains(item);
     }
 }

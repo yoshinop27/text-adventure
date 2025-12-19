@@ -1,8 +1,11 @@
 package edu.grinnell.csc207.textgame.Interfaces;
 
+/**
+ * Interface for objects (npcs and items) that can be looked at.
+ */
 public interface Lookable {
     /**
-     * Interact with the interactable, display message
+     * Displays information about this object when looked at.
      */
-    public void lookAt();
+    void lookAt();
 }

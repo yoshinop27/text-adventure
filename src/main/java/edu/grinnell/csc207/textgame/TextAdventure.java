@@ -1,30 +1,31 @@
 package edu.grinnell.csc207.textgame;
 
+import edu.grinnell.csc207.textgame.Rooms.LinkedIn;
 import java.util.Scanner;
-import edu.grinnell.csc207.textgame.Rooms.*;
-import java.util.HashSet;
 
+/**
+ * Driver for our game
+*/
 public class TextAdventure {
+
+    /**
+     * Main entry point
+     */
     public static void main(String[] args) {
-        // Create inventory and parser
+        // initalize inventory and parser
         Inventory inventory = new Inventory();
-        HashSet<String> used_items = new HashSet<>();
-        HashSet<String> network = new HashSet<>();
-        
-        // Initialize parser with initial room - application
-        Parser parser = new Parser(new LinkedIn(inventory), used_items, network);
+        Parser parser = new Parser(new LinkedIn(inventory));
 
+        // welcome messaging
         System.out.println("Welcome to the Text Adventure!");
-        System.out.println("You are a computer science student looking for an internship");
-
-        // Create scanner for user input
+        System.out.println(
+            "You are a computer science student looking for an internship.\n");
+        
         Scanner scanner = new Scanner(System.in);
+        System.out.println(parser.getCurrentRoom().getDescription());
 
-        // Print initial room description
-        System.out.println(parser.currentRoom.getDescription());
-
-        // Start game loop
-        while (!parser.isGameOver) {
+        // game loop
+        while (!parser.isGameOver()) {
             System.out.print("> ");
             String input = scanner.nextLine();
             parser.parse(input);
